@@ -1,0 +1,102 @@
+@media (max-width: 768px) {
+    .dividerHeading {
+        margin-top: 1100px;
+    }
+
+    .dividerHeading2,
+    .dividerHeading3 {
+        margin: 150px 0;
+    }
+
+    .dividerHeading2 {
+        margin: 1300px 0;
+    }
+
+    .info-grid {
+        margin-top: 1200px;
+    }
+
+    .timeline-mobile {
+        margin-top: 250px;
+    }
+
+    .image-slider {
+        margin-top: 150px;
+    }
+
+    .contact-grid {
+        margin-top: 250px;
+    }
+
+}
+
+
+/* Desktop: Add vertical space between rows */
+@media (min-width: 769px) {
+
+    .image_text_section .second-row-text,
+    .image_text_section .second-row-image {
+        margin-top: 7rem;
+    }
+}
+
+/* Mobile: Stack layout + spacing */
+@media (max-width: 768px) {
+    .image_text_section {
+        grid-template-columns: 1fr;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .image_text_section .grid-item {
+        width: 100%;
+    }
+
+    .image_text_section .second-row-image {
+        order: 1;
+        margin-top: 3rem;
+    }
+
+    .image_text_section .second-row-text {
+        order: 2;
+    }
+
+    /* Space between stacked items */
+    .image_text_section .grid-item:not(:first-child) {
+        margin-top: 2rem;
+    }
+
+}
+
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .dual_list_section {
+    flex-direction: column;
+    margin: -1270px 0 -1100px 0;
+  }
+
+  .list_column {
+    height: 420px;
+    /* more height for visibility */
+    margin-bottom: 1.5rem;
+    padding: 50px 0;
+    /* reduced padding to allow more items */
+  }
+
+  .scrolling_list li {
+    font-size: 1rem;
+    /* slightly smaller text for compact view */
+    padding: 0.6rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .list_column {
+    height: 460px;
+    /* taller still for narrow phones */
+    padding-top: 80px;
+    padding-bottom: 200px;
+  }
+}

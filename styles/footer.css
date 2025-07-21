@@ -1,0 +1,181 @@
+/* FOOTER BASE */
+.site-footer {
+    background: #f9f9f9;
+  color: #585858;
+    padding: 3rem 1rem;
+    font-size: 0.95rem;
+    margin-top: 150px;
+
+    /* Needed for aurora pseudo-element positioning */
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* BUSINESS CARD COLUMN */
+.business-card {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    gap: 1rem;
+    margin-left: 50px;
+    border: 1px solid #5858585e;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card-logo {
+    background-image: url('../media/uni-builders/UNI-Builders-Logo-Transp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -5px;
+  color: #585858;
+    width: 100px;
+    height: 100px;
+    min-width: 60px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+}
+
+.card-details h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.card-details p {
+    margin: 0.2rem 0;
+}
+
+/* ADDRESS COLUMN */
+.address-info h3,
+.address-info .address-text {
+    padding-left: 5rem;
+    width: 300px;
+    text-align: left;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/* GENERAL FOOTER SECTIONS */
+.footer-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  color: #585858;
+}
+
+.footer-section p {
+    margin: 0.3rem 0;
+}
+
+/* SOCIAL MEDIA ICON IMAGES */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+.social-icons a {
+  color: #585858;
+    text-decoration: none;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: brightness(1) saturate(1);
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover img {
+    filter: brightness(1.5) saturate(1.5);
+    transform: scale(1.1);
+}
+
+/* COPYRIGHT SECTION */
+.footer-bottom {
+    border-top: 1px solid #585858;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #aaa;
+    height: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .site-footer {
+        margin-top: 400px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .business-card {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .card-logo {
+        margin-bottom: 1rem;
+    }
+
+    .address-info h3,
+    .address-info .address-text {
+        padding-left: 0;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+/* Aurora Border Top - subtle, animated, blending */
+.aurora-border-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;             /* slightly taller for better spread */
+    width: 100%;
+    pointer-events: none;
+    z-index: 10;
+    background-size: 400% 100%;
+    animation: auroraFlow 15s linear infinite, auroraGlowPulse 6s ease-in-out infinite;
+    filter: blur(30px);
+    mix-blend-mode: screen;
+    opacity: 0.7;
+}
+
+/* Aurora Glow Border Effect (background and box-shadow) */
+.site-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+}
+

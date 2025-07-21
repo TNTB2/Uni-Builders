@@ -1,0 +1,101 @@
+/* Reset & Base *
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+}
+*/
+
+h1,
+h2 {
+  margin-bottom: 0.5em;
+  color: #585858;
+}
+
+p {
+  margin-bottom: 1em;
+  color: #585858;
+}
+
+.dividerHeading {
+  position: relative;
+  text-align: center;
+  color: #585858;
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+
+  /* Apply a radial mask for inward opacity fade */
+  -webkit-mask-image: radial-gradient(circle at center, rgb(255, 255, 255, 1) 0%, rgb(255, 255, 255, 1) 40%rgba(255, 255, 255, 0) 100%);
+  -webkit-mask-size: 150% 150%;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+
+  mask-image: radial-gradient(circle at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.795) 100%);
+  mask-size: 150% 150%;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  margin-bottom: -150px;
+  pointer-events: none;
+  /* optional: prevents hover flickering during animation */
+}
+
+.dividerHeading2 {
+  margin-top: 100px;
+}
+.dividerHeading3 {
+  margin-top: 50px;
+}
+
+.dividerHeading::before,
+.dividerHeading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  height: 2px;
+  background-color: #ccc;
+  transition: opacity 1.2s ease;
+  opacity: 0;
+}
+
+.dividerHeading::before {
+  left: 0;
+}
+
+.dividerHeading::after {
+  right: 0;
+}
+
+/* When visible */
+.scroll-fade.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scroll-fade.visible.dividerHeading::before,
+.scroll-fade.visible.dividerHeading::after {
+  opacity: 1;
+}
+
+.center_Heading {
+  text-align: center;
+  color: #585858;
+  font-size: 2rem;
+}
+
+
+
+.serviceHeadings {
+  background-color: #ffffff;
+}
