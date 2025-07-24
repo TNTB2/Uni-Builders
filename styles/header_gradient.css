@@ -20,10 +20,10 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../media/uni-builders/House.jpeg");
+  background-image: url("../media/HEADER_IMAGE_BEFOUNDSTUDIO_UNIBUILDERS_BACKDROP.jpg");
   background-size: cover;
   background-position: center;
-  filter: blur(7px) brightness(1.1);
+  /* filter: blur(7px) brightness(1.1); */
   z-index: 0;
 }
 
@@ -53,6 +53,15 @@
   font-size: 1.25rem;
   max-width: 90%;
   line-height: 1.4;
+}
+
+.main-header a {
+  text-align: center;
+  color:white;
+  text-decoration: none;
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: 900;
 }
 
 /* Responsive tweaks for smaller screens */

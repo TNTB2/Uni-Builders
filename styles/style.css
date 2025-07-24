@@ -12,10 +12,41 @@ body {
 }
 */
 
+@font-face {
+  font-family: CenturyGothic;
+  src: url('../media/Fonts/Century\ Gothic/CenturyGothic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: CenturyGothic_bold;
+  src: url('../media/Fonts/Century\ Gothic/CenturyGothic_bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Mont-ExtraLightDEMO;
+  src: url('../media/Fonts/mont/Mont-ExtraLightDEMO.otf') format('truetype');
+}
+
+@font-face {
+  font-family: Mont-HeavyDEMO;
+  src: url('../media/Fonts/Mont-HeavyDEMO.otf') format('truetype');
+}
+
+/* 
+  font-family: CenturyGothic_bold;
+  font-family: Mont-ExtraLightDEMO;
+*/
+
 h1,
-h2 {
+h2,
+h3 {
   margin-bottom: 0.5em;
   color: #585858;
+  font-family: Mont-HeavyDEMO;
+}
+
+body {
+  font-family: CenturyGothic;
 }
 
 p {
@@ -53,6 +84,7 @@ p {
 .dividerHeading2 {
   margin-top: 100px;
 }
+
 .dividerHeading3 {
   margin-top: 50px;
 }

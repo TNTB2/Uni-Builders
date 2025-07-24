@@ -1,0 +1,17 @@
+1. replace background with new background -->
+2. replace with new logo -->
+3. add feticon -->
+4. change fonts: -->
+- Headers H1/H2/H3 - Mont Heavy -->
+- Body Font - Century Gothic -->
+5. Gallery Image updates -->
+6. Text Left alight without big space -->
+7. Form Direct to hello@unibuilders.com
+8. Footer -->
+- info@unibuilders.com -->
+- Kim Street -->
+- Strand on next line -->
+- Privacy Policy Update -->
+
+- Privacy Policy - het ek vir jou ge-epos na tiaan@befoundstudio toe
+- Images, Logos en Font is op die drive onder Uni Builders onder Bez Projects

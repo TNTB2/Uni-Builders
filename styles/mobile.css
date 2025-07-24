@@ -12,6 +12,11 @@
         margin: 1300px 0;
     }
 
+    .dividerHeading::before,
+    .dividerHeading::after {
+        background-color: #cccccc00;
+    }
+
     .info-grid {
         margin-top: 1200px;
     }
@@ -72,31 +77,31 @@
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-  .dual_list_section {
-    flex-direction: column;
-    margin: -1270px 0 -1100px 0;
-  }
+    .dual_list_section {
+        flex-direction: column;
+        margin: -1270px 0 -1100px 0;
+    }
 
-  .list_column {
-    height: 420px;
-    /* more height for visibility */
-    margin-bottom: 1.5rem;
-    padding: 50px 0;
-    /* reduced padding to allow more items */
-  }
+    .list_column {
+        height: 420px;
+        /* more height for visibility */
+        margin-bottom: 1.5rem;
+        padding: 50px 0;
+        /* reduced padding to allow more items */
+    }
 
-  .scrolling_list li {
-    font-size: 1rem;
-    /* slightly smaller text for compact view */
-    padding: 0.6rem 0.8rem;
-  }
+    .scrolling_list li {
+        font-size: 1rem;
+        /* slightly smaller text for compact view */
+        padding: 0.6rem 0.8rem;
+    }
 }
 
 @media (max-width: 480px) {
-  .list_column {
-    height: 460px;
-    /* taller still for narrow phones */
-    padding-top: 80px;
-    padding-bottom: 200px;
-  }
+    .list_column {
+        height: 460px;
+        /* taller still for narrow phones */
+        padding-top: 80px;
+        padding-bottom: 200px;
+    }
 }

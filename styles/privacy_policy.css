@@ -1,0 +1,104 @@
+.privacy_policy {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+  }
+
+  .privacy_policy h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .privacy_policy h2 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .privacy_policy article aside {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+
+  .privacy_policy p {
+    margin-bottom: 1rem;
+  }
+
+  /* Ordered list with styled numbers */
+  .privacy_policy ol {
+    counter-reset: section;
+    list-style: none;
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .privacy_policy ol > li {
+    counter-increment: section;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 2rem;
+  }
+
+  .privacy_policy ol > li::before {
+    content: counter(section) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    color: #444;
+  }
+
+  /* Unordered list with custom bullets */
+  .privacy_policy ul {
+    list-style: none;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .privacy_policy ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .privacy_policy ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    color: #0e4677; 
+    line-height: 1;
+  }
+
+  /* Mobile improvements */
+  @media (max-width: 600px) {
+    .privacy_policy {
+      padding: 1.5rem 1rem;
+    }
+
+    .privacy_policy h1 {
+      font-size: 1.6rem;
+    }
+
+    .privacy_policy h2 {
+      font-size: 1rem;
+    }
+
+    .privacy_policy ul,
+    .privacy_policy ol {
+      padding-left: 1rem;
+    }
+
+    .privacy_policy ol > li,
+    .privacy_policy ul > li {
+      padding-left: 1.2rem;
+    }
+  }

@@ -32,7 +32,7 @@
 .contact-form button {
   padding: 0.75rem;
   font-size: 1rem;
-  background-color: #4b6cb7;
+  background-color: #0e4677;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -40,7 +40,7 @@
 }
 
 .contact-form button:hover {
-  background-color: #354b8e;
+  background-color: #0e4677f5;
 }
 
 /* Contact Info (Schedule Section) */
@@ -86,6 +86,14 @@
   color: #585858;
 }
 
+.thank-you-message {
+  font-style: italic;
+  color: #0e4677;
+  /* Or your brand color */
+  text-align: center;
+  margin-top: 1rem;
+}
+
 /* Desktop Layout */
 @media (min-width: 768px) {
   .contact-grid {
@@ -102,8 +110,10 @@
 
   .schedule-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* 2 columns */
-    grid-template-rows: repeat(2, auto);   /* 2 rows */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    grid-template-rows: repeat(2, auto);
+    /* 2 rows */
     gap: 1.5rem 2rem;
   }
 }
@@ -115,7 +125,6 @@
   justify-content: center;
   align-items: center;
   background: #f7f7f700;
-  border-top: 1px solid #fefefe00;
   font-size: 1.5rem;
   padding: 2rem;
   text-align: center;
