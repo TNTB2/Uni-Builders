@@ -14,12 +14,12 @@ body {
 
 @font-face {
   font-family: CenturyGothic;
-  src: url('./media/Fonts/Century\ Gothic/CenturyGothic.ttf') format('truetype');
+  src: url('../media/Fonts/CenturyGothic/centurygothic.ttf') format('truetype');
 }
 
 @font-face {
   font-family: CenturyGothic_bold;
-  src: url('./media/Fonts/Century\ Gothic/CenturyGothic_bold.ttf') format('truetype');
+  src: url('../media/Fonts/CenturyGothic/centurygothic_bold.ttf') format('truetype');
 }
 
 @font-face {
