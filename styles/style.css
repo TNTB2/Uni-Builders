@@ -24,12 +24,12 @@ body {
 
 @font-face {
   font-family: Mont-ExtraLightDEMO;
-  src: url('./media/Fonts/mont/Mont-ExtraLightDEMO.otf') format('truetype');
+  src: url('../media/Fonts/mont/Mont-ExtraLightDEMO.otf') format('truetype');
 }
 
 @font-face {
   font-family: Mont-HeavyDEMO;
-  src: url('./media/Fonts/Mont-HeavyDEMO.otf') format('truetype');
+  src: url('../media/Fonts/Mont-HeavyDEMO.otf') format('truetype');
 }
 
 /* 
