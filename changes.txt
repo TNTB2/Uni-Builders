@@ -6,7 +6,7 @@
 - Body Font - Century Gothic -->
 5. Gallery Image updates -->
 6. Text Left alight without big space -->
-7. Form Direct to hello@unibuilders.com
+7. Form Direct to hello@unibuilders.com -->
 8. Footer -->
 - info@unibuilders.com -->
 - Kim Street -->
@@ -15,3 +15,7 @@
 
 - Privacy Policy - het ek vir jou ge-epos na tiaan@befoundstudio toe
 - Images, Logos en Font is op die drive onder Uni Builders onder Bez Projects
+
+
+https://tntb2.github.io/Uni-Builders/
+https://unibuilders.co.za

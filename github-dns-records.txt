@@ -1,0 +1,36 @@
+# GitHub Pages DNS A Records for unibuilders.co.za
+# These should be added in your DNS Editor on xneelo (https://konsoleh.co.za)
+
+# Replace any existing A record for "@" with these four
+
+TYPE: A
+NAME: @
+VALUE: 185.199.108.153
+TTL: 3600
+
+TYPE: A
+NAME: @
+VALUE: 185.199.109.153
+TTL: 3600
+
+TYPE: A
+NAME: @
+VALUE: 185.199.110.153
+TTL: 3600
+
+TYPE: A
+NAME: @
+VALUE: 185.199.111.153
+TTL: 3600
+
+# (Optional) CNAME Record for www.unibuilders.co.za:
+# If you want https://www.unibuilders.co.za to also point to GitHub Pages:
+
+TYPE: CNAME
+NAME: www
+VALUE: yourusername.github.io.
+TTL: 3600
+
+# NOTE:
+# - Replace "yourusername" with your actual GitHub username
+# - Do NOT change or delete mail-related records (like mail, smtp, imap, etc.)
